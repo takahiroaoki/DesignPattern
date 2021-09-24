@@ -1,0 +1,8 @@
+# Factory Method
+
+Factory Methodパターンを使えば、別のProductの具体的なクラスを作りたいときにも、frameworkパッケージ内の抽象クラスを継承して同じ関係の別ProductおよびそのFactoryを実装できる。
+
+
+なお、IDCardクラスのコンストラクタに修飾子がついていない（＝同一パッケージ内からのみコンストラクタを呼び出せる）のは、IDCardFactoryクラスを通してしかIDCardインスタンスを作成できないということを主張している。
+Factoryメソッドを使えば、main()メソッド内ではID番号などの具体的な値を取り扱わなくて済む。
+
