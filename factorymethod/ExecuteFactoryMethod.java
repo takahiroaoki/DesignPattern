@@ -1,8 +1,5 @@
 package factorymethod;
 
-import java.util.List;
-
-import factorymethod.framework.Factory;
 import factorymethod.framework.Product;
 import factorymethod.idcard.IDCardFactory;
 
