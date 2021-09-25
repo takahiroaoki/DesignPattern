@@ -17,7 +17,7 @@ public class IDCardFactory extends Factory {
 
     @Override
     public void registerProduct(Product p) {
-        IDCard card = (IDCard)p;
+        IDCard card = (IDCard) p;
         ownerMap.put(card.getID(), card.getOwner());
     }
 

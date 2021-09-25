@@ -25,5 +25,5 @@ public class FileProperties extends Properties implements FileIO {
     @Override
     public String getValue(String key) {
         return getProperty(key);
-    }    
+    }
 }

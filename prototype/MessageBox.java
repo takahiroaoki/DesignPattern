@@ -4,9 +4,11 @@ import prototype.framework.Product;
 
 public class MessageBox extends Product {
     private char decoChar;
+
     public MessageBox(char decoChar) {
         this.decoChar = decoChar;
     }
+
     @Override
     public void use(String s) {
         int width = getWidth(s);
