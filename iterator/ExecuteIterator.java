@@ -8,10 +8,10 @@ class ExecuteIterator {
         bookShelf.appendBook(new Book("book_3"));
         bookShelf.appendBook(new Book("book_4"));
         bookShelf.appendBook(new Book("book_5"));
-        
+
         Iterator it = bookShelf.iterator();
         while (it.hasNext()) {
-            Book book = (Book)it.next();
+            Book book = (Book) it.next();
             System.out.println(book.getName());
         }
     }

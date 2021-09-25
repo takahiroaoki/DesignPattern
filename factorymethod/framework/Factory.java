@@ -6,6 +6,8 @@ public abstract class Factory {
         registerProduct(p);
         return p;
     }
+
     public abstract Product createProduct(String owner);
+
     public abstract void registerProduct(Product p);
 }

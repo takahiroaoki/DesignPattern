@@ -8,7 +8,7 @@ public class BookShelf implements Aggregate {
     public Book getBookAt(int index) {
         return books.get(index);
     }
-    
+
     public void appendBook(Book book) {
         this.books.add(book);
     }

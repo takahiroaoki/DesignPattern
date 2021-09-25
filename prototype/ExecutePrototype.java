@@ -3,7 +3,7 @@ package prototype;
 import prototype.framework.Product;
 import prototype.framework.Manager;
 
-public class Main {
+public class ExecutePrototype {
     public static void main(String[] args) {
         // 登録
         Manager manager = new Manager();
