@@ -1,6 +1,6 @@
 package strategy;
 
-public class Main {
+public class ExecuteStrategy {
     public static void main(String[] args) {
         int seed1 = 123;
         int seed2 = 456;
