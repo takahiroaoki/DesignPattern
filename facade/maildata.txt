@@ -1,0 +1,4 @@
+taro@example.com=Suzuki Taro
+hanako@example.com=Sato Hanako
+sasaki@example.com=Sasaki
+yoshida@example.com=Yoshida Yu
