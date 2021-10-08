@@ -4,8 +4,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
-import iterator.Iterator;
-
 public class PageMaker {
 
     private static String dbName = "maildata";
