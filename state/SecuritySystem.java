@@ -18,7 +18,7 @@ public class SecuritySystem extends Frame implements ActionListener, Context {
     private TextArea textScreen = new TextArea(10, 60);// 警備センサ出力
     private Button buttonUse = new Button("金庫使用");// 金庫使用ボタン
     private Button buttonAlarm = new Button("非常ベル");// 非常ベルボタン
-    private Button buttonPhone = new Button("通常通話")// 通常通話ボタン
+    private Button buttonPhone = new Button("通常通話");// 通常通話ボタン
     private Button buttonExit = new Button("終了");// 終了ボタン
 
     public SecuritySystem(String title) {
