@@ -5,13 +5,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class BigChar {
-    // 文字の名前
-    private char charName;
     // 大きな文字を表現するアスキーアート
     private String fontData;
 
     public BigChar(char charName) {
-        this.charName = charName;
         try {
             BufferedReader reader = new BufferedReader(
                 new FileReader("flyweight/big" + charName + ".txt")

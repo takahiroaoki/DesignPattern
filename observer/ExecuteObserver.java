@@ -1,7 +1,5 @@
 package observer;
 
-import java.util.Random;
-
 public class ExecuteObserver {
     public static void main(String[] args) {
         /**
