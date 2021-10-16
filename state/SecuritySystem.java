@@ -1,10 +1,51 @@
 package state;
 
-public class SecuritySystem implements Context {
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.TextArea;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Panel;
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+// TODO: コンテナ内でGUIを使えるようにする
+public class SecuritySystem extends Frame implements ActionListener, Context {
     private State state = DayState.getInstance();// 現在の状態
 
+    private TextField textClock = new TextField(60);// 時刻表示
+    private TextArea textScreen = new TextArea(10, 60);// 警備センサ出力
+    private Button buttonUse = new Button("金庫使用");// 金庫使用ボタン
+    private Button buttonAlarm = new Button("非常ベル");// 非常ベルボタン
+    private Button buttonPhone = new Button("通常通話")// 通常通話ボタン
+    private Button buttonExit = new Button("終了");// 終了ボタン
+
     public SecuritySystem(String title) {
-        // TODO: コンテナ内でGUIを使えるようにする
+        super(title);
+        setBackground(Color.lightGray);
+        setLayout(new BorderLayout());
+        // textClock配置
+        add(textClock, BorderLayout.NORTH);
+        textClock.setEditable(false);
+        // textScreen配置
+        add(textScreen, BorderLayout.CENTER);
+        textScreen.setEditable(false);
+        // パネルにボタンを格納
+        Panel panel = new Panel();
+        panel.add(buttonUse);
+        panel.add(buttonAlarm);
+        panel.add(buttonPhone);
+        panel.add(buttonExit);
+        add(panel, BorderLayout.SOUTH);//そのパネルを配置
+        // 表示
+        pack();
+        setVisible(true);
+        // リスナーの設定
+        buttonUse.addActionListener(this);
+        buttonAlarm.addActionListener(this);
+        buttonPhone.addActionListener(this);
+        buttonExit.addActionListener(this);
     }
 
     @Override
@@ -33,5 +74,22 @@ public class SecuritySystem implements Context {
     @Override
     public void recording(String msg) {
         System.out.println(msg);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println(e.toString());
+
+        if (e.getSource() == buttonUse) {
+            state.doUse(this);
+        } else if (e.getSource() == buttonAlarm) {
+            state.doAlarm(this);
+        } else if (e.getSource() == buttonPhone) {
+            state.doPhone(this);
+        } else if (e.getSource() == buttonExit) {
+            System.exit(0);
+        } else {
+            System.out.println("What do you mean?");
+        }
     }
 }
