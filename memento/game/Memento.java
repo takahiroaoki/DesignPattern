@@ -21,6 +21,7 @@ public class Memento implements Serializable {
         fruits.add(fruit);
     }
 
+    @SuppressWarnings("unchecked")
     List<String> getFruit() {
         return (List<String>) fruits.clone();
     }
