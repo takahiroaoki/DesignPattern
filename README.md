@@ -16,7 +16,7 @@ GUIツールを必要とするjava.awt.Frameクラスなどの表示について
 こうしたコードの実行手順は以下です。
 
 1. [VcXsrv](https://sourceforge.net/projects/vcxsrv/)をインストール。
-2. VcXsrvを起動して適宜設定を行う。
+2. VcXsrvを起動して適宜設定を行う（[参考リンク](https://wisteriahill.sakura.ne.jp/CMS/WordPress/2020/09/02/docker-desktop-for-windows-x-window-gui/)）。
 3. .devcontainer/devcontainer.jsonファイル内にある以下の設定を環境に応じて変更
 
 ```
