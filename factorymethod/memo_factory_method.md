@@ -1,4 +1,4 @@
-# Factory Method
+# Factory Methodパターン
 
 Factory Methodパターンを使えば、別のProductの具体的なクラスを作りたいときにも、frameworkパッケージ内の抽象クラスを継承して同じ関係の別ProductおよびそのFactoryを実装できる。
 

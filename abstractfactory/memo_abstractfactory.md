@@ -1,4 +1,4 @@
-# Abstract Factory
+# Abstract Factoryパターン
 
 具体的なxxfactoryパッケージを追加するのは簡単だが、factoryパッケージ内に新しい抽象部品を追加するという修正は手間がかかる。なぜならfactoryパッケージに修正を加えた場合、基本的に全てのxxfactoryパッケージにも修正が必要となるから。
 

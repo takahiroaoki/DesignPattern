@@ -1,4 +1,4 @@
-# Decorator
+# Decoratorパターン
 
 Decoratorパターンは飾りと中身を同一視するという点で、Compositeパターンと似ている。
 

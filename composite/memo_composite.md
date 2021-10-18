@@ -1,4 +1,4 @@
-# Composite
+# Compositeパターン
 
 Compositeパターンとは、容器と中身を同一視するパターンのこと。つまりツリー構造のものはCompositeパターンを適用しやすい。
 
