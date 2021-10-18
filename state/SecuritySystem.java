@@ -52,9 +52,9 @@ public class SecuritySystem extends Frame implements ActionListener, Context {
     public void setClock(int hour) {
         String clockString = "現在時刻は";
         if (hour < 10) {
-            clockString += 0 + ":00";
+            clockString += "0" + hour + ":00";
         } else {
-            clockString += ":00";
+            clockString += hour + ":00";
         }
         System.out.println(clockString);
         state.doClock(this, hour);
