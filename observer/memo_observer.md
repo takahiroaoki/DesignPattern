@@ -1,4 +1,4 @@
-# Observer
+# Observerパターン
 
 今回はSubjectが変化したらObserverに通知するだけだったが、Observerの変化もSubjectに反映する場合には無限ループとなる可能性があることに注意。
 例えばMVCのModelとViewは、ユーザーの入力などをViewで検知してModelに反映したり、Modelの変化をViewに反映したりと相互に通知する。
