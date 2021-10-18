@@ -1,16 +1,19 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/java
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.202.3/containers/java
 {
 	"name": "Java",
+	"runArgs": ["--init"],
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
 			// Update the VARIANT arg to pick a Java version: 11, 16
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use the -bullseye variants on local arm64/Apple Silicon.
 			"VARIANT": "11",
 			// Options
 			"INSTALL_MAVEN": "false",
 			"INSTALL_GRADLE": "false",
-			"NODE_VERSION": "lts/*"
+			"NODE_VERSION": "none"
 		}
 	},
 
@@ -32,4 +35,10 @@
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
+	"features": {
+		"desktop-lite": "latest"
+	},
+	"remoteEnv": {
+		"DISPLAY": "192.168.0.13:0.0"
+	},
 }

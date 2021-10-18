@@ -30,4 +30,7 @@ public class NightState implements State {
         context.callSecurityCenter("通常の電話（夜間）");
     }
     
+    public String toString() {
+        return "[夜間]";
+    }
 }
