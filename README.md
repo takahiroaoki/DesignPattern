@@ -9,6 +9,12 @@ Javaのバージョンの関係や学習のために、配布されたコード�
 
 書籍とは異なり、本レポジトリのコードはDockerコンテナ上で開発しています。
 
+本レポジトリの実行環境は以下です。
+
+- Windows 10
+- [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop) 4.2.0
+- VSCode with the extention of Remote Development 0.21.0
+
 コンテナについてはDocker Desktop for Windows 4.2.0を使用し、Visual Studio Codeから拡張機能であるRemote Development 0.21.0を用いてコンテナに接続しています。
 
 GUIツールを必要とするjava.awt.Frameクラスなどの表示についてはX Window System (X11)を使用して、ホストコンピュータの画面に表示しています。
