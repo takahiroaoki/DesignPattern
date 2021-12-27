@@ -4,6 +4,8 @@ package builder;
 javacコマンドででコンパイルしてから起動
 */
 public class ExecuteBuilder {
+    // javac ./builder/ExecuteBuilder.java
+    // java ./builder/ExecuteBuilder (plain|html)
     public static void main(String[] args) {
         if (args.length != 1) {
             usage();
