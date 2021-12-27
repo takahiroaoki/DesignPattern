@@ -10,7 +10,6 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// TODO: コンテナ内でGUIを使えるようにする
 public class SecuritySystem extends Frame implements ActionListener, Context {
     private State state = DayState.getInstance();// 現在の状態
 
